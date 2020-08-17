@@ -32,6 +32,10 @@ if platform.system() == "Windows":
 extra_compile_args = ["-Wall"]
 extra_link_args = []
 
+if platform.system() == "Darwin":
+    extra_compile_args += ["-mmacosx-version-min=10.9", "-std=c++11"]
+    extra_link_args += ["-mmacosx-version-min=10.9"]
+
 if HAVE_CYTHON:
     cythonize('cypdftotext.pyx', language_level=3)
 
