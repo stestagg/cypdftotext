@@ -4,7 +4,11 @@ import subprocess
 import sys
 from setuptools import Extension
 from setuptools import setup
-from Cython.Build import cythonize
+try:
+    from Cython.Build import cythonize
+    HAVE_CYTHON = True
+except ImportError:
+    HAVE_CYTHON = False
 
 
 include_dirs = None
@@ -28,8 +32,8 @@ if platform.system() == "Windows":
 extra_compile_args = ["-Wall"]
 extra_link_args = []
 
-
-cythonize('cypdftotext.pyx', language_level=3)
+if HAVE_CYTHON:
+    cythonize('cypdftotext.pyx', language_level=3)
 
 
 module = Extension(
