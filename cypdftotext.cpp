@@ -5,12 +5,12 @@
     "distutils": {
         "depends": [],
         "language": "c++",
-        "name": "pdftotext",
+        "name": "cypdftotext",
         "sources": [
-            "pdftotext.pyx"
+            "cypdftotext.pyx"
         ]
     },
-    "module_name": "pdftotext"
+    "module_name": "cypdftotext"
 }
 END: Cython Metadata */
 
@@ -630,8 +630,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__pdftotext
-#define __PYX_HAVE_API__pdftotext
+#define __PYX_HAVE__cypdftotext
+#define __PYX_HAVE_API__cypdftotext
 /* Early includes */
 #include <string.h>
 #include "ios"
@@ -852,49 +852,49 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "pdftotext.pyx",
+  "cypdftotext.pyx",
   "stringsource",
 };
 
 /*--- Type declarations ---*/
-struct __pyx_obj_9pdftotext_TextLayout;
-struct __pyx_obj_9pdftotext_PageIter;
-struct __pyx_obj_9pdftotext_PDF;
+struct __pyx_obj_11cypdftotext_TextLayout;
+struct __pyx_obj_11cypdftotext_PageIter;
+struct __pyx_obj_11cypdftotext_PDF;
 
-/* "pdftotext.pyx":51
+/* "cypdftotext.pyx":51
  * 
  * 
  * cdef class TextLayout:             # <<<<<<<<<<<<<<
  *     physical = text_layout_enum.physical_layout
  *     raw = text_layout_enum.raw_order_layout
  */
-struct __pyx_obj_9pdftotext_TextLayout {
+struct __pyx_obj_11cypdftotext_TextLayout {
   PyObject_HEAD
 };
 
 
-/* "pdftotext.pyx":57
+/* "cypdftotext.pyx":57
  * 
  * 
  * cdef class PageIter:             # <<<<<<<<<<<<<<
  *     cdef PDF pdf
  *     cdef int page_num
  */
-struct __pyx_obj_9pdftotext_PageIter {
+struct __pyx_obj_11cypdftotext_PageIter {
   PyObject_HEAD
-  struct __pyx_obj_9pdftotext_PDF *pdf;
+  struct __pyx_obj_11cypdftotext_PDF *pdf;
   int page_num;
 };
 
 
-/* "pdftotext.pyx":73
+/* "cypdftotext.pyx":73
  * 
  * 
  * cdef class PDF:             # <<<<<<<<<<<<<<
  * 
  *     cdef bytes data
  */
-struct __pyx_obj_9pdftotext_PDF {
+struct __pyx_obj_11cypdftotext_PDF {
   PyObject_HEAD
   PyObject *data;
   poppler::document *doc;
@@ -1292,21 +1292,21 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 /* Module declarations from 'libcpp.vector' */
 
-/* Module declarations from 'pdftotext' */
-static PyTypeObject *__pyx_ptype_9pdftotext_TextLayout = 0;
-static PyTypeObject *__pyx_ptype_9pdftotext_PageIter = 0;
-static PyTypeObject *__pyx_ptype_9pdftotext_PDF = 0;
-static PyObject *__pyx_f_9pdftotext___pyx_unpickle_TextLayout__set_state(struct __pyx_obj_9pdftotext_TextLayout *, PyObject *); /*proto*/
+/* Module declarations from 'cypdftotext' */
+static PyTypeObject *__pyx_ptype_11cypdftotext_TextLayout = 0;
+static PyTypeObject *__pyx_ptype_11cypdftotext_PageIter = 0;
+static PyTypeObject *__pyx_ptype_11cypdftotext_PDF = 0;
+static PyObject *__pyx_f_11cypdftotext___pyx_unpickle_TextLayout__set_state(struct __pyx_obj_11cypdftotext_TextLayout *, PyObject *); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyObject_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyUnicode_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyStr_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyBytes_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyByteArray_string_to_py_std__in_string(std::string const &); /*proto*/
-#define __Pyx_MODULE_NAME "pdftotext"
-extern int __pyx_module_is_main_pdftotext;
-int __pyx_module_is_main_pdftotext = 0;
+#define __Pyx_MODULE_NAME "cypdftotext"
+extern int __pyx_module_is_main_cypdftotext;
+int __pyx_module_is_main_cypdftotext = 0;
 
-/* Implementation of 'pdftotext' */
+/* Implementation of 'cypdftotext' */
 static PyObject *__pyx_builtin_StopIteration;
 static PyObject *__pyx_builtin_TypeError;
 static PyObject *__pyx_builtin_ValueError;
@@ -1336,7 +1336,6 @@ static const char __pyx_k_physical[] = "physical";
 static const char __pyx_k_pyx_type[] = "__pyx_type";
 static const char __pyx_k_setstate[] = "__setstate__";
 static const char __pyx_k_TypeError[] = "TypeError";
-static const char __pyx_k_pdftotext[] = "pdftotext";
 static const char __pyx_k_pyx_state[] = "__pyx_state";
 static const char __pyx_k_reduce_ex[] = "__reduce_ex__";
 static const char __pyx_k_IndexError[] = "IndexError";
@@ -1344,6 +1343,7 @@ static const char __pyx_k_TextLayout[] = "TextLayout";
 static const char __pyx_k_ValueError[] = "ValueError";
 static const char __pyx_k_pyx_result[] = "__pyx_result";
 static const char __pyx_k_PickleError[] = "PickleError";
+static const char __pyx_k_cypdftotext[] = "cypdftotext";
 static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";
 static const char __pyx_k_stringsource[] = "stringsource";
 static const char __pyx_k_StopIteration[] = "StopIteration";
@@ -1373,6 +1373,7 @@ static PyObject *__pyx_n_s_TypeError;
 static PyObject *__pyx_kp_u_Unable_to_read_PDF;
 static PyObject *__pyx_n_s_ValueError;
 static PyObject *__pyx_n_s_cline_in_traceback;
+static PyObject *__pyx_n_s_cypdftotext;
 static PyObject *__pyx_n_s_data;
 static PyObject *__pyx_n_s_decode;
 static PyObject *__pyx_n_s_dict;
@@ -1388,7 +1389,6 @@ static PyObject *__pyx_n_s_non_raw_non_physical;
 static PyObject *__pyx_kp_u_out_of_range_for_pdf_with;
 static PyObject *__pyx_kp_u_pages;
 static PyObject *__pyx_n_s_pdf;
-static PyObject *__pyx_n_s_pdftotext;
 static PyObject *__pyx_n_s_physical;
 static PyObject *__pyx_n_s_pickle;
 static PyObject *__pyx_n_s_pyx_PickleError;
@@ -1407,24 +1407,24 @@ static PyObject *__pyx_kp_s_stringsource;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_update;
 static PyObject *__pyx_n_u_utf8;
-static PyObject *__pyx_pf_9pdftotext_10TextLayout___reduce_cython__(struct __pyx_obj_9pdftotext_TextLayout *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9pdftotext_10TextLayout_2__setstate_cython__(struct __pyx_obj_9pdftotext_TextLayout *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
-static int __pyx_pf_9pdftotext_8PageIter___cinit__(struct __pyx_obj_9pdftotext_PageIter *__pyx_v_self, PyObject *__pyx_v_pdf); /* proto */
-static PyObject *__pyx_pf_9pdftotext_8PageIter_2__next__(struct __pyx_obj_9pdftotext_PageIter *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9pdftotext_8PageIter_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_9pdftotext_PageIter *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9pdftotext_8PageIter_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_9pdftotext_PageIter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self, PyObject *__pyx_v_data, PyObject *__pyx_v_layout, PyObject *__pyx_v_encoding); /* proto */
-static Py_ssize_t __pyx_pf_9pdftotext_3PDF_2__len__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9pdftotext_3PDF_4__iter__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self, int __pyx_v_page_num); /* proto */
-static PyObject *__pyx_pf_9pdftotext_3PDF_9num_pages___get__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9pdftotext_3PDF_8encoding___get__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9pdftotext_3PDF_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_9pdftotext_PDF *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9pdftotext_3PDF_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_9pdftotext_PDF *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_9pdftotext___pyx_unpickle_TextLayout(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_9pdftotext_TextLayout(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_9pdftotext_PageIter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_9pdftotext_PDF(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_pf_11cypdftotext_10TextLayout___reduce_cython__(struct __pyx_obj_11cypdftotext_TextLayout *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11cypdftotext_10TextLayout_2__setstate_cython__(struct __pyx_obj_11cypdftotext_TextLayout *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_11cypdftotext_8PageIter___cinit__(struct __pyx_obj_11cypdftotext_PageIter *__pyx_v_self, PyObject *__pyx_v_pdf); /* proto */
+static PyObject *__pyx_pf_11cypdftotext_8PageIter_2__next__(struct __pyx_obj_11cypdftotext_PageIter *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11cypdftotext_8PageIter_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_11cypdftotext_PageIter *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11cypdftotext_8PageIter_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_11cypdftotext_PageIter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_11cypdftotext_3PDF___cinit__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self, PyObject *__pyx_v_data, PyObject *__pyx_v_layout, PyObject *__pyx_v_encoding); /* proto */
+static Py_ssize_t __pyx_pf_11cypdftotext_3PDF_2__len__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11cypdftotext_3PDF_4__iter__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11cypdftotext_3PDF_6__getitem__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self, int __pyx_v_page_num); /* proto */
+static PyObject *__pyx_pf_11cypdftotext_3PDF_9num_pages___get__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11cypdftotext_3PDF_8encoding___get__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11cypdftotext_3PDF_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11cypdftotext_3PDF_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_11cypdftotext___pyx_unpickle_TextLayout(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_tp_new_11cypdftotext_TextLayout(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11cypdftotext_PageIter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11cypdftotext_PDF(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_int_12;
 static PyObject *__pyx_int_222419149;
@@ -1445,19 +1445,19 @@ static PyObject *__pyx_codeobj__8;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_10TextLayout_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9pdftotext_10TextLayout_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_11cypdftotext_10TextLayout_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_11cypdftotext_10TextLayout_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9pdftotext_10TextLayout___reduce_cython__(((struct __pyx_obj_9pdftotext_TextLayout *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11cypdftotext_10TextLayout___reduce_cython__(((struct __pyx_obj_11cypdftotext_TextLayout *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext_10TextLayout___reduce_cython__(struct __pyx_obj_9pdftotext_TextLayout *__pyx_v_self) {
+static PyObject *__pyx_pf_11cypdftotext_10TextLayout___reduce_cython__(struct __pyx_obj_11cypdftotext_TextLayout *__pyx_v_self) {
   PyObject *__pyx_v_state = 0;
   PyObject *__pyx_v__dict = 0;
   int __pyx_v_use_setstate;
@@ -1656,7 +1656,7 @@ static PyObject *__pyx_pf_9pdftotext_10TextLayout___reduce_cython__(struct __pyx
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("pdftotext.TextLayout.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.TextLayout.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_state);
@@ -1674,19 +1674,19 @@ static PyObject *__pyx_pf_9pdftotext_10TextLayout___reduce_cython__(struct __pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_10TextLayout_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_9pdftotext_10TextLayout_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_11cypdftotext_10TextLayout_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_11cypdftotext_10TextLayout_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9pdftotext_10TextLayout_2__setstate_cython__(((struct __pyx_obj_9pdftotext_TextLayout *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_11cypdftotext_10TextLayout_2__setstate_cython__(((struct __pyx_obj_11cypdftotext_TextLayout *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext_10TextLayout_2__setstate_cython__(struct __pyx_obj_9pdftotext_TextLayout *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_11cypdftotext_10TextLayout_2__setstate_cython__(struct __pyx_obj_11cypdftotext_TextLayout *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1701,7 +1701,7 @@ static PyObject *__pyx_pf_9pdftotext_10TextLayout_2__setstate_cython__(struct __
  *     __pyx_unpickle_TextLayout__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(1, 17, __pyx_L1_error)
-  __pyx_t_1 = __pyx_f_9pdftotext___pyx_unpickle_TextLayout__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_11cypdftotext___pyx_unpickle_TextLayout__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
@@ -1717,7 +1717,7 @@ static PyObject *__pyx_pf_9pdftotext_10TextLayout_2__setstate_cython__(struct __
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pdftotext.TextLayout.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.TextLayout.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1725,7 +1725,7 @@ static PyObject *__pyx_pf_9pdftotext_10TextLayout_2__setstate_cython__(struct __
   return __pyx_r;
 }
 
-/* "pdftotext.pyx":61
+/* "cypdftotext.pyx":61
  *     cdef int page_num
  * 
  *     def __cinit__(self, pdf):             # <<<<<<<<<<<<<<
@@ -1734,8 +1734,8 @@ static PyObject *__pyx_pf_9pdftotext_10TextLayout_2__setstate_cython__(struct __
  */
 
 /* Python wrapper */
-static int __pyx_pw_9pdftotext_8PageIter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_9pdftotext_8PageIter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_11cypdftotext_8PageIter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_11cypdftotext_8PageIter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_pdf = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -1775,18 +1775,18 @@ static int __pyx_pw_9pdftotext_8PageIter_1__cinit__(PyObject *__pyx_v_self, PyOb
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 61, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pdftotext.PageIter.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PageIter.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9pdftotext_8PageIter___cinit__(((struct __pyx_obj_9pdftotext_PageIter *)__pyx_v_self), __pyx_v_pdf);
+  __pyx_r = __pyx_pf_11cypdftotext_8PageIter___cinit__(((struct __pyx_obj_11cypdftotext_PageIter *)__pyx_v_self), __pyx_v_pdf);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_9pdftotext_8PageIter___cinit__(struct __pyx_obj_9pdftotext_PageIter *__pyx_v_self, PyObject *__pyx_v_pdf) {
+static int __pyx_pf_11cypdftotext_8PageIter___cinit__(struct __pyx_obj_11cypdftotext_PageIter *__pyx_v_self, PyObject *__pyx_v_pdf) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1795,23 +1795,23 @@ static int __pyx_pf_9pdftotext_8PageIter___cinit__(struct __pyx_obj_9pdftotext_P
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "pdftotext.pyx":62
+  /* "cypdftotext.pyx":62
  * 
  *     def __cinit__(self, pdf):
  *         self.pdf = pdf             # <<<<<<<<<<<<<<
  *         self.page_num = 0
  * 
  */
-  if (!(likely(((__pyx_v_pdf) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_pdf, __pyx_ptype_9pdftotext_PDF))))) __PYX_ERR(0, 62, __pyx_L1_error)
+  if (!(likely(((__pyx_v_pdf) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_pdf, __pyx_ptype_11cypdftotext_PDF))))) __PYX_ERR(0, 62, __pyx_L1_error)
   __pyx_t_1 = __pyx_v_pdf;
   __Pyx_INCREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v_self->pdf);
   __Pyx_DECREF(((PyObject *)__pyx_v_self->pdf));
-  __pyx_v_self->pdf = ((struct __pyx_obj_9pdftotext_PDF *)__pyx_t_1);
+  __pyx_v_self->pdf = ((struct __pyx_obj_11cypdftotext_PDF *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pdftotext.pyx":63
+  /* "cypdftotext.pyx":63
  *     def __cinit__(self, pdf):
  *         self.pdf = pdf
  *         self.page_num = 0             # <<<<<<<<<<<<<<
@@ -1820,7 +1820,7 @@ static int __pyx_pf_9pdftotext_8PageIter___cinit__(struct __pyx_obj_9pdftotext_P
  */
   __pyx_v_self->page_num = 0;
 
-  /* "pdftotext.pyx":61
+  /* "cypdftotext.pyx":61
  *     cdef int page_num
  * 
  *     def __cinit__(self, pdf):             # <<<<<<<<<<<<<<
@@ -1833,14 +1833,14 @@ static int __pyx_pf_9pdftotext_8PageIter___cinit__(struct __pyx_obj_9pdftotext_P
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pdftotext.PageIter.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PageIter.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "pdftotext.pyx":65
+/* "cypdftotext.pyx":65
  *         self.page_num = 0
  * 
  *     def __next__(self):             # <<<<<<<<<<<<<<
@@ -1849,19 +1849,19 @@ static int __pyx_pf_9pdftotext_8PageIter___cinit__(struct __pyx_obj_9pdftotext_P
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_8PageIter_3__next__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_9pdftotext_8PageIter_3__next__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_11cypdftotext_8PageIter_3__next__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_11cypdftotext_8PageIter_3__next__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__next__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9pdftotext_8PageIter_2__next__(((struct __pyx_obj_9pdftotext_PageIter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11cypdftotext_8PageIter_2__next__(((struct __pyx_obj_11cypdftotext_PageIter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext_8PageIter_2__next__(struct __pyx_obj_9pdftotext_PageIter *__pyx_v_self) {
+static PyObject *__pyx_pf_11cypdftotext_8PageIter_2__next__(struct __pyx_obj_11cypdftotext_PageIter *__pyx_v_self) {
   int __pyx_v_cur_page;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -1873,7 +1873,7 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_2__next__(struct __pyx_obj_9pdfto
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__next__", 0);
 
-  /* "pdftotext.pyx":66
+  /* "cypdftotext.pyx":66
  * 
  *     def __next__(self):
  *         cdef int cur_page = self.page_num             # <<<<<<<<<<<<<<
@@ -1883,7 +1883,7 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_2__next__(struct __pyx_obj_9pdfto
   __pyx_t_1 = __pyx_v_self->page_num;
   __pyx_v_cur_page = __pyx_t_1;
 
-  /* "pdftotext.pyx":67
+  /* "cypdftotext.pyx":67
  *     def __next__(self):
  *         cdef int cur_page = self.page_num
  *         if cur_page == self.pdf.num_pages:             # <<<<<<<<<<<<<<
@@ -1893,7 +1893,7 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_2__next__(struct __pyx_obj_9pdfto
   __pyx_t_2 = ((__pyx_v_cur_page == __pyx_v_self->pdf->num_pages) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "pdftotext.pyx":68
+    /* "cypdftotext.pyx":68
  *         cdef int cur_page = self.page_num
  *         if cur_page == self.pdf.num_pages:
  *             raise StopIteration()             # <<<<<<<<<<<<<<
@@ -1906,7 +1906,7 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_2__next__(struct __pyx_obj_9pdfto
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(0, 68, __pyx_L1_error)
 
-    /* "pdftotext.pyx":67
+    /* "cypdftotext.pyx":67
  *     def __next__(self):
  *         cdef int cur_page = self.page_num
  *         if cur_page == self.pdf.num_pages:             # <<<<<<<<<<<<<<
@@ -1915,7 +1915,7 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_2__next__(struct __pyx_obj_9pdfto
  */
   }
 
-  /* "pdftotext.pyx":69
+  /* "cypdftotext.pyx":69
  *         if cur_page == self.pdf.num_pages:
  *             raise StopIteration()
  *         self.page_num += 1             # <<<<<<<<<<<<<<
@@ -1924,7 +1924,7 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_2__next__(struct __pyx_obj_9pdfto
  */
   __pyx_v_self->page_num = (__pyx_v_self->page_num + 1);
 
-  /* "pdftotext.pyx":70
+  /* "cypdftotext.pyx":70
  *             raise StopIteration()
  *         self.page_num += 1
  *         return self.pdf[cur_page]             # <<<<<<<<<<<<<<
@@ -1938,7 +1938,7 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_2__next__(struct __pyx_obj_9pdfto
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "pdftotext.pyx":65
+  /* "cypdftotext.pyx":65
  *         self.page_num = 0
  * 
  *     def __next__(self):             # <<<<<<<<<<<<<<
@@ -1949,7 +1949,7 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_2__next__(struct __pyx_obj_9pdfto
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("pdftotext.PageIter.__next__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PageIter.__next__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1964,19 +1964,19 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_2__next__(struct __pyx_obj_9pdfto
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_8PageIter_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9pdftotext_8PageIter_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_11cypdftotext_8PageIter_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_11cypdftotext_8PageIter_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9pdftotext_8PageIter_4__reduce_cython__(((struct __pyx_obj_9pdftotext_PageIter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11cypdftotext_8PageIter_4__reduce_cython__(((struct __pyx_obj_11cypdftotext_PageIter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext_8PageIter_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_9pdftotext_PageIter *__pyx_v_self) {
+static PyObject *__pyx_pf_11cypdftotext_8PageIter_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_11cypdftotext_PageIter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2006,7 +2006,7 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_4__reduce_cython__(CYTHON_UNUSED 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pdftotext.PageIter.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PageIter.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -2021,19 +2021,19 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_4__reduce_cython__(CYTHON_UNUSED 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_8PageIter_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_9pdftotext_8PageIter_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_11cypdftotext_8PageIter_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_11cypdftotext_8PageIter_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9pdftotext_8PageIter_6__setstate_cython__(((struct __pyx_obj_9pdftotext_PageIter *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_11cypdftotext_8PageIter_6__setstate_cython__(((struct __pyx_obj_11cypdftotext_PageIter *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext_8PageIter_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_9pdftotext_PageIter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_11cypdftotext_8PageIter_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_11cypdftotext_PageIter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2063,14 +2063,14 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_6__setstate_cython__(CYTHON_UNUSE
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pdftotext.PageIter.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PageIter.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "pdftotext.pyx":81
+/* "cypdftotext.pyx":81
  *     cdef readonly str encoding
  * 
  *     def __cinit__(self, bytes data, layout=TextLayout.physical, encoding='utf8'):             # <<<<<<<<<<<<<<
@@ -2079,8 +2079,8 @@ static PyObject *__pyx_pf_9pdftotext_8PageIter_6__setstate_cython__(CYTHON_UNUSE
  */
 
 /* Python wrapper */
-static int __pyx_pw_9pdftotext_3PDF_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_9pdftotext_3PDF_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_11cypdftotext_3PDF_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_11cypdftotext_3PDF_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_data = 0;
   PyObject *__pyx_v_layout = 0;
   PyObject *__pyx_v_encoding = 0;
@@ -2148,12 +2148,12 @@ static int __pyx_pw_9pdftotext_3PDF_1__cinit__(PyObject *__pyx_v_self, PyObject 
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 81, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pdftotext.PDF.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PDF.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_data), (&PyBytes_Type), 1, "data", 1))) __PYX_ERR(0, 81, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9pdftotext_3PDF___cinit__(((struct __pyx_obj_9pdftotext_PDF *)__pyx_v_self), __pyx_v_data, __pyx_v_layout, __pyx_v_encoding);
+  __pyx_r = __pyx_pf_11cypdftotext_3PDF___cinit__(((struct __pyx_obj_11cypdftotext_PDF *)__pyx_v_self), __pyx_v_data, __pyx_v_layout, __pyx_v_encoding);
 
   /* function exit code */
   goto __pyx_L0;
@@ -2164,7 +2164,7 @@ static int __pyx_pw_9pdftotext_3PDF_1__cinit__(PyObject *__pyx_v_self, PyObject 
   return __pyx_r;
 }
 
-static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self, PyObject *__pyx_v_data, PyObject *__pyx_v_layout, PyObject *__pyx_v_encoding) {
+static int __pyx_pf_11cypdftotext_3PDF___cinit__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self, PyObject *__pyx_v_data, PyObject *__pyx_v_layout, PyObject *__pyx_v_encoding) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   enum poppler::page::text_layout_enum __pyx_t_1;
@@ -2177,7 +2177,7 @@ static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "pdftotext.pyx":82
+  /* "cypdftotext.pyx":82
  * 
  *     def __cinit__(self, bytes data, layout=TextLayout.physical, encoding='utf8'):
  *         self.data = data             # <<<<<<<<<<<<<<
@@ -2190,7 +2190,7 @@ static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *_
   __Pyx_DECREF(__pyx_v_self->data);
   __pyx_v_self->data = __pyx_v_data;
 
-  /* "pdftotext.pyx":83
+  /* "cypdftotext.pyx":83
  *     def __cinit__(self, bytes data, layout=TextLayout.physical, encoding='utf8'):
  *         self.data = data
  *         self.layout = layout             # <<<<<<<<<<<<<<
@@ -2200,7 +2200,7 @@ static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *_
   __pyx_t_1 = ((enum poppler::page::text_layout_enum)__Pyx_PyInt_As_enum__poppler_3a__3a_page_3a__3a_text_layout_enum(__pyx_v_layout)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 83, __pyx_L1_error)
   __pyx_v_self->layout = __pyx_t_1;
 
-  /* "pdftotext.pyx":84
+  /* "cypdftotext.pyx":84
  *         self.data = data
  *         self.layout = layout
  *         self.encoding = encoding             # <<<<<<<<<<<<<<
@@ -2216,7 +2216,7 @@ static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *_
   __pyx_v_self->encoding = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pdftotext.pyx":86
+  /* "cypdftotext.pyx":86
  *         self.encoding = encoding
  * 
  *         self.doc = document.load_from_raw_data(self.data, len(data))             # <<<<<<<<<<<<<<
@@ -2235,7 +2235,7 @@ static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *_
   __pyx_t_4 = PyBytes_GET_SIZE(__pyx_v_data); if (unlikely(__pyx_t_4 == ((Py_ssize_t)-1))) __PYX_ERR(0, 86, __pyx_L1_error)
   __pyx_v_self->doc = poppler::document::load_from_raw_data(__pyx_t_3, __pyx_t_4);
 
-  /* "pdftotext.pyx":87
+  /* "cypdftotext.pyx":87
  * 
  *         self.doc = document.load_from_raw_data(self.data, len(data))
  *         if self.doc == NULL:             # <<<<<<<<<<<<<<
@@ -2245,7 +2245,7 @@ static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *_
   __pyx_t_5 = ((__pyx_v_self->doc == NULL) != 0);
   if (unlikely(__pyx_t_5)) {
 
-    /* "pdftotext.pyx":88
+    /* "cypdftotext.pyx":88
  *         self.doc = document.load_from_raw_data(self.data, len(data))
  *         if self.doc == NULL:
  *             raise ValueError("Unable to read PDF")             # <<<<<<<<<<<<<<
@@ -2258,7 +2258,7 @@ static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *_
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __PYX_ERR(0, 88, __pyx_L1_error)
 
-    /* "pdftotext.pyx":87
+    /* "cypdftotext.pyx":87
  * 
  *         self.doc = document.load_from_raw_data(self.data, len(data))
  *         if self.doc == NULL:             # <<<<<<<<<<<<<<
@@ -2267,7 +2267,7 @@ static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *_
  */
   }
 
-  /* "pdftotext.pyx":89
+  /* "cypdftotext.pyx":89
  *         if self.doc == NULL:
  *             raise ValueError("Unable to read PDF")
  *         self.num_pages = self.doc.pages()             # <<<<<<<<<<<<<<
@@ -2276,7 +2276,7 @@ static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *_
  */
   __pyx_v_self->num_pages = __pyx_v_self->doc->pages();
 
-  /* "pdftotext.pyx":81
+  /* "cypdftotext.pyx":81
  *     cdef readonly str encoding
  * 
  *     def __cinit__(self, bytes data, layout=TextLayout.physical, encoding='utf8'):             # <<<<<<<<<<<<<<
@@ -2289,14 +2289,14 @@ static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *_
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("pdftotext.PDF.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PDF.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "pdftotext.pyx":91
+/* "cypdftotext.pyx":91
  *         self.num_pages = self.doc.pages()
  * 
  *     def __len__(self):             # <<<<<<<<<<<<<<
@@ -2305,24 +2305,24 @@ static int __pyx_pf_9pdftotext_3PDF___cinit__(struct __pyx_obj_9pdftotext_PDF *_
  */
 
 /* Python wrapper */
-static Py_ssize_t __pyx_pw_9pdftotext_3PDF_3__len__(PyObject *__pyx_v_self); /*proto*/
-static Py_ssize_t __pyx_pw_9pdftotext_3PDF_3__len__(PyObject *__pyx_v_self) {
+static Py_ssize_t __pyx_pw_11cypdftotext_3PDF_3__len__(PyObject *__pyx_v_self); /*proto*/
+static Py_ssize_t __pyx_pw_11cypdftotext_3PDF_3__len__(PyObject *__pyx_v_self) {
   Py_ssize_t __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__len__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9pdftotext_3PDF_2__len__(((struct __pyx_obj_9pdftotext_PDF *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11cypdftotext_3PDF_2__len__(((struct __pyx_obj_11cypdftotext_PDF *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static Py_ssize_t __pyx_pf_9pdftotext_3PDF_2__len__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self) {
+static Py_ssize_t __pyx_pf_11cypdftotext_3PDF_2__len__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self) {
   Py_ssize_t __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__len__", 0);
 
-  /* "pdftotext.pyx":92
+  /* "cypdftotext.pyx":92
  * 
  *     def __len__(self):
  *         return self.num_pages             # <<<<<<<<<<<<<<
@@ -2332,7 +2332,7 @@ static Py_ssize_t __pyx_pf_9pdftotext_3PDF_2__len__(struct __pyx_obj_9pdftotext_
   __pyx_r = __pyx_v_self->num_pages;
   goto __pyx_L0;
 
-  /* "pdftotext.pyx":91
+  /* "cypdftotext.pyx":91
  *         self.num_pages = self.doc.pages()
  * 
  *     def __len__(self):             # <<<<<<<<<<<<<<
@@ -2346,7 +2346,7 @@ static Py_ssize_t __pyx_pf_9pdftotext_3PDF_2__len__(struct __pyx_obj_9pdftotext_
   return __pyx_r;
 }
 
-/* "pdftotext.pyx":94
+/* "cypdftotext.pyx":94
  *         return self.num_pages
  * 
  *     def __iter__(self):             # <<<<<<<<<<<<<<
@@ -2355,19 +2355,19 @@ static Py_ssize_t __pyx_pf_9pdftotext_3PDF_2__len__(struct __pyx_obj_9pdftotext_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_3PDF_5__iter__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_9pdftotext_3PDF_5__iter__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_11cypdftotext_3PDF_5__iter__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_11cypdftotext_3PDF_5__iter__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__iter__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9pdftotext_3PDF_4__iter__(((struct __pyx_obj_9pdftotext_PDF *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11cypdftotext_3PDF_4__iter__(((struct __pyx_obj_11cypdftotext_PDF *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext_3PDF_4__iter__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self) {
+static PyObject *__pyx_pf_11cypdftotext_3PDF_4__iter__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2376,7 +2376,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_4__iter__(struct __pyx_obj_9pdftotext_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__iter__", 0);
 
-  /* "pdftotext.pyx":95
+  /* "cypdftotext.pyx":95
  * 
  *     def __iter__(self):
  *         return PageIter(self)             # <<<<<<<<<<<<<<
@@ -2384,13 +2384,13 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_4__iter__(struct __pyx_obj_9pdftotext_
  *     def __getitem__(self, int page_num):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9pdftotext_PageIter), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_11cypdftotext_PageIter), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pdftotext.pyx":94
+  /* "cypdftotext.pyx":94
  *         return self.num_pages
  * 
  *     def __iter__(self):             # <<<<<<<<<<<<<<
@@ -2401,7 +2401,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_4__iter__(struct __pyx_obj_9pdftotext_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pdftotext.PDF.__iter__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PDF.__iter__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2409,7 +2409,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_4__iter__(struct __pyx_obj_9pdftotext_
   return __pyx_r;
 }
 
-/* "pdftotext.pyx":97
+/* "cypdftotext.pyx":97
  *         return PageIter(self)
  * 
  *     def __getitem__(self, int page_num):             # <<<<<<<<<<<<<<
@@ -2418,8 +2418,8 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_4__iter__(struct __pyx_obj_9pdftotext_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_3PDF_7__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_arg_page_num); /*proto*/
-static PyObject *__pyx_pw_9pdftotext_3PDF_7__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_arg_page_num) {
+static PyObject *__pyx_pw_11cypdftotext_3PDF_7__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_arg_page_num); /*proto*/
+static PyObject *__pyx_pw_11cypdftotext_3PDF_7__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_arg_page_num) {
   int __pyx_v_page_num;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -2432,18 +2432,18 @@ static PyObject *__pyx_pw_9pdftotext_3PDF_7__getitem__(PyObject *__pyx_v_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pdftotext.PDF.__getitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PDF.__getitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9pdftotext_3PDF_6__getitem__(((struct __pyx_obj_9pdftotext_PDF *)__pyx_v_self), ((int)__pyx_v_page_num));
+  __pyx_r = __pyx_pf_11cypdftotext_3PDF_6__getitem__(((struct __pyx_obj_11cypdftotext_PDF *)__pyx_v_self), ((int)__pyx_v_page_num));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self, int __pyx_v_page_num) {
+static PyObject *__pyx_pf_11cypdftotext_3PDF_6__getitem__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self, int __pyx_v_page_num) {
   PyObject *__pyx_v_adjusted_num = NULL;
   poppler::page *__pyx_v_page;
   poppler::ustring __pyx_v_page_text;
@@ -2463,7 +2463,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__getitem__", 0);
 
-  /* "pdftotext.pyx":98
+  /* "cypdftotext.pyx":98
  * 
  *     def __getitem__(self, int page_num):
  *         adjusted_num = page_num             # <<<<<<<<<<<<<<
@@ -2475,7 +2475,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
   __pyx_v_adjusted_num = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pdftotext.pyx":99
+  /* "cypdftotext.pyx":99
  *     def __getitem__(self, int page_num):
  *         adjusted_num = page_num
  *         if adjusted_num < 0:             # <<<<<<<<<<<<<<
@@ -2487,7 +2487,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_2) {
 
-    /* "pdftotext.pyx":100
+    /* "cypdftotext.pyx":100
  *         adjusted_num = page_num
  *         if adjusted_num < 0:
  *             adjusted_num += self.num_pages             # <<<<<<<<<<<<<<
@@ -2502,7 +2502,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
     __Pyx_DECREF_SET(__pyx_v_adjusted_num, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pdftotext.pyx":99
+    /* "cypdftotext.pyx":99
  *     def __getitem__(self, int page_num):
  *         adjusted_num = page_num
  *         if adjusted_num < 0:             # <<<<<<<<<<<<<<
@@ -2511,7 +2511,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
  */
   }
 
-  /* "pdftotext.pyx":101
+  /* "cypdftotext.pyx":101
  *         if adjusted_num < 0:
  *             adjusted_num += self.num_pages
  *         if adjusted_num < 0 or adjusted_num >= self.num_pages:             # <<<<<<<<<<<<<<
@@ -2536,7 +2536,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
   __pyx_L5_bool_binop_done:;
   if (unlikely(__pyx_t_2)) {
 
-    /* "pdftotext.pyx":102
+    /* "cypdftotext.pyx":102
  *             adjusted_num += self.num_pages
  *         if adjusted_num < 0 or adjusted_num >= self.num_pages:
  *             raise IndexError(f'Page {page_num} out of range for pdf with {self.num_pages} pages')             # <<<<<<<<<<<<<<
@@ -2581,7 +2581,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __PYX_ERR(0, 102, __pyx_L1_error)
 
-    /* "pdftotext.pyx":101
+    /* "cypdftotext.pyx":101
  *         if adjusted_num < 0:
  *             adjusted_num += self.num_pages
  *         if adjusted_num < 0 or adjusted_num >= self.num_pages:             # <<<<<<<<<<<<<<
@@ -2590,7 +2590,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
  */
   }
 
-  /* "pdftotext.pyx":103
+  /* "cypdftotext.pyx":103
  *         if adjusted_num < 0 or adjusted_num >= self.num_pages:
  *             raise IndexError(f'Page {page_num} out of range for pdf with {self.num_pages} pages')
  *         cdef page *page = self.doc.create_page(adjusted_num)             # <<<<<<<<<<<<<<
@@ -2600,7 +2600,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
   __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_adjusted_num); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 103, __pyx_L1_error)
   __pyx_v_page = __pyx_v_self->doc->create_page(__pyx_t_7);
 
-  /* "pdftotext.pyx":104
+  /* "cypdftotext.pyx":104
  *             raise IndexError(f'Page {page_num} out of range for pdf with {self.num_pages} pages')
  *         cdef page *page = self.doc.create_page(adjusted_num)
  *         if page == NULL:             # <<<<<<<<<<<<<<
@@ -2610,7 +2610,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
   __pyx_t_2 = ((__pyx_v_page == NULL) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "pdftotext.pyx":105
+    /* "cypdftotext.pyx":105
  *         cdef page *page = self.doc.create_page(adjusted_num)
  *         if page == NULL:
  *             raise ValueError(f"Error reading page {page_num}")             # <<<<<<<<<<<<<<
@@ -2629,7 +2629,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __PYX_ERR(0, 105, __pyx_L1_error)
 
-    /* "pdftotext.pyx":104
+    /* "cypdftotext.pyx":104
  *             raise IndexError(f'Page {page_num} out of range for pdf with {self.num_pages} pages')
  *         cdef page *page = self.doc.create_page(adjusted_num)
  *         if page == NULL:             # <<<<<<<<<<<<<<
@@ -2638,7 +2638,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
  */
   }
 
-  /* "pdftotext.pyx":106
+  /* "cypdftotext.pyx":106
  *         if page == NULL:
  *             raise ValueError(f"Error reading page {page_num}")
  *         cdef ustring page_text = page.text(rectf(), self.layout)             # <<<<<<<<<<<<<<
@@ -2647,7 +2647,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
  */
   __pyx_v_page_text = __pyx_v_page->text(poppler::rectf(), __pyx_v_self->layout);
 
-  /* "pdftotext.pyx":107
+  /* "cypdftotext.pyx":107
  *             raise ValueError(f"Error reading page {page_num}")
  *         cdef ustring page_text = page.text(rectf(), self.layout)
  *         cdef bytes page_bytes = page_text.to_latin1()             # <<<<<<<<<<<<<<
@@ -2659,7 +2659,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
   __pyx_v_page_bytes = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pdftotext.pyx":108
+  /* "cypdftotext.pyx":108
  *         cdef ustring page_text = page.text(rectf(), self.layout)
  *         cdef bytes page_bytes = page_text.to_latin1()
  *         if page_bytes[-1] == 0x0c:             # <<<<<<<<<<<<<<
@@ -2675,7 +2675,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_2) {
 
-    /* "pdftotext.pyx":109
+    /* "cypdftotext.pyx":109
  *         cdef bytes page_bytes = page_text.to_latin1()
  *         if page_bytes[-1] == 0x0c:
  *             page_bytes = page_bytes[:-1]             # <<<<<<<<<<<<<<
@@ -2686,7 +2686,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
     __Pyx_DECREF_SET(__pyx_v_page_bytes, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "pdftotext.pyx":108
+    /* "cypdftotext.pyx":108
  *         cdef ustring page_text = page.text(rectf(), self.layout)
  *         cdef bytes page_bytes = page_text.to_latin1()
  *         if page_bytes[-1] == 0x0c:             # <<<<<<<<<<<<<<
@@ -2695,7 +2695,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
  */
   }
 
-  /* "pdftotext.pyx":110
+  /* "cypdftotext.pyx":110
  *         if page_bytes[-1] == 0x0c:
  *             page_bytes = page_bytes[:-1]
  *         return page_bytes.decode(self.encoding)             # <<<<<<<<<<<<<<
@@ -2722,7 +2722,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "pdftotext.pyx":97
+  /* "cypdftotext.pyx":97
  *         return PageIter(self)
  * 
  *     def __getitem__(self, int page_num):             # <<<<<<<<<<<<<<
@@ -2735,7 +2735,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("pdftotext.PDF.__getitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PDF.__getitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_adjusted_num);
@@ -2745,7 +2745,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
   return __pyx_r;
 }
 
-/* "pdftotext.pyx":77
+/* "cypdftotext.pyx":77
  *     cdef bytes data
  *     cdef document *doc
  *     cdef readonly int num_pages             # <<<<<<<<<<<<<<
@@ -2754,19 +2754,19 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_6__getitem__(struct __pyx_obj_9pdftote
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_3PDF_9num_pages_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_9pdftotext_3PDF_9num_pages_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_11cypdftotext_3PDF_9num_pages_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_11cypdftotext_3PDF_9num_pages_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9pdftotext_3PDF_9num_pages___get__(((struct __pyx_obj_9pdftotext_PDF *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11cypdftotext_3PDF_9num_pages___get__(((struct __pyx_obj_11cypdftotext_PDF *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext_3PDF_9num_pages___get__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self) {
+static PyObject *__pyx_pf_11cypdftotext_3PDF_9num_pages___get__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2784,7 +2784,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_9num_pages___get__(struct __pyx_obj_9p
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pdftotext.PDF.num_pages.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PDF.num_pages.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2792,7 +2792,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_9num_pages___get__(struct __pyx_obj_9p
   return __pyx_r;
 }
 
-/* "pdftotext.pyx":79
+/* "cypdftotext.pyx":79
  *     cdef readonly int num_pages
  *     cdef text_layout_enum layout
  *     cdef readonly str encoding             # <<<<<<<<<<<<<<
@@ -2801,19 +2801,19 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_9num_pages___get__(struct __pyx_obj_9p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_3PDF_8encoding_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_9pdftotext_3PDF_8encoding_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_11cypdftotext_3PDF_8encoding_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_11cypdftotext_3PDF_8encoding_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9pdftotext_3PDF_8encoding___get__(((struct __pyx_obj_9pdftotext_PDF *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11cypdftotext_3PDF_8encoding___get__(((struct __pyx_obj_11cypdftotext_PDF *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext_3PDF_8encoding___get__(struct __pyx_obj_9pdftotext_PDF *__pyx_v_self) {
+static PyObject *__pyx_pf_11cypdftotext_3PDF_8encoding___get__(struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
@@ -2836,19 +2836,19 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_8encoding___get__(struct __pyx_obj_9pd
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_3PDF_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9pdftotext_3PDF_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_11cypdftotext_3PDF_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_11cypdftotext_3PDF_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9pdftotext_3PDF_8__reduce_cython__(((struct __pyx_obj_9pdftotext_PDF *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11cypdftotext_3PDF_8__reduce_cython__(((struct __pyx_obj_11cypdftotext_PDF *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext_3PDF_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_9pdftotext_PDF *__pyx_v_self) {
+static PyObject *__pyx_pf_11cypdftotext_3PDF_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2878,7 +2878,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_8__reduce_cython__(CYTHON_UNUSED struc
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pdftotext.PDF.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PDF.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -2893,19 +2893,19 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_8__reduce_cython__(CYTHON_UNUSED struc
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_3PDF_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_9pdftotext_3PDF_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_11cypdftotext_3PDF_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_11cypdftotext_3PDF_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9pdftotext_3PDF_10__setstate_cython__(((struct __pyx_obj_9pdftotext_PDF *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_11cypdftotext_3PDF_10__setstate_cython__(((struct __pyx_obj_11cypdftotext_PDF *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext_3PDF_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_9pdftotext_PDF *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_11cypdftotext_3PDF_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_11cypdftotext_PDF *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2935,7 +2935,7 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_10__setstate_cython__(CYTHON_UNUSED st
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pdftotext.PDF.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.PDF.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -2949,9 +2949,9 @@ static PyObject *__pyx_pf_9pdftotext_3PDF_10__setstate_cython__(CYTHON_UNUSED st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9pdftotext_1__pyx_unpickle_TextLayout(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_9pdftotext_1__pyx_unpickle_TextLayout = {"__pyx_unpickle_TextLayout", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9pdftotext_1__pyx_unpickle_TextLayout, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_9pdftotext_1__pyx_unpickle_TextLayout(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11cypdftotext_1__pyx_unpickle_TextLayout(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11cypdftotext_1__pyx_unpickle_TextLayout = {"__pyx_unpickle_TextLayout", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11cypdftotext_1__pyx_unpickle_TextLayout, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11cypdftotext_1__pyx_unpickle_TextLayout(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v___pyx_type = 0;
   long __pyx_v___pyx_checksum;
   PyObject *__pyx_v___pyx_state = 0;
@@ -3013,18 +3013,18 @@ static PyObject *__pyx_pw_9pdftotext_1__pyx_unpickle_TextLayout(PyObject *__pyx_
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__pyx_unpickle_TextLayout", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 1, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pdftotext.__pyx_unpickle_TextLayout", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.__pyx_unpickle_TextLayout", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9pdftotext___pyx_unpickle_TextLayout(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
+  __pyx_r = __pyx_pf_11cypdftotext___pyx_unpickle_TextLayout(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9pdftotext___pyx_unpickle_TextLayout(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_11cypdftotext___pyx_unpickle_TextLayout(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_v___pyx_PickleError = 0;
   PyObject *__pyx_v___pyx_result = 0;
   PyObject *__pyx_r = NULL;
@@ -3121,7 +3121,7 @@ static PyObject *__pyx_pf_9pdftotext___pyx_unpickle_TextLayout(CYTHON_UNUSED PyO
  *     if __pyx_state is not None:
  *         __pyx_unpickle_TextLayout__set_state(<TextLayout> __pyx_result, __pyx_state)
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_9pdftotext_TextLayout), __pyx_n_s_new); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 7, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_11cypdftotext_TextLayout), __pyx_n_s_new); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -3160,7 +3160,7 @@ static PyObject *__pyx_pf_9pdftotext___pyx_unpickle_TextLayout(CYTHON_UNUSED PyO
  * cdef __pyx_unpickle_TextLayout__set_state(TextLayout __pyx_result, tuple __pyx_state):
  */
     if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(1, 9, __pyx_L1_error)
-    __pyx_t_3 = __pyx_f_9pdftotext___pyx_unpickle_TextLayout__set_state(((struct __pyx_obj_9pdftotext_TextLayout *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 9, __pyx_L1_error)
+    __pyx_t_3 = __pyx_f_11cypdftotext___pyx_unpickle_TextLayout__set_state(((struct __pyx_obj_11cypdftotext_TextLayout *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
@@ -3197,7 +3197,7 @@ static PyObject *__pyx_pf_9pdftotext___pyx_unpickle_TextLayout(CYTHON_UNUSED PyO
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("pdftotext.__pyx_unpickle_TextLayout", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.__pyx_unpickle_TextLayout", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v___pyx_PickleError);
@@ -3215,7 +3215,7 @@ static PyObject *__pyx_pf_9pdftotext___pyx_unpickle_TextLayout(CYTHON_UNUSED PyO
  *         __pyx_result.__dict__.update(__pyx_state[0])
  */
 
-static PyObject *__pyx_f_9pdftotext___pyx_unpickle_TextLayout__set_state(struct __pyx_obj_9pdftotext_TextLayout *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_f_11cypdftotext___pyx_unpickle_TextLayout__set_state(struct __pyx_obj_11cypdftotext_TextLayout *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -3312,7 +3312,7 @@ static PyObject *__pyx_f_9pdftotext___pyx_unpickle_TextLayout__set_state(struct 
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("pdftotext.__pyx_unpickle_TextLayout__set_state", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cypdftotext.__pyx_unpickle_TextLayout__set_state", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3569,7 +3569,7 @@ static CYTHON_INLINE PyObject *__pyx_convert_PyByteArray_string_to_py_std__in_st
   return __pyx_r;
 }
 
-static PyObject *__pyx_tp_new_9pdftotext_TextLayout(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11cypdftotext_TextLayout(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -3580,7 +3580,7 @@ static PyObject *__pyx_tp_new_9pdftotext_TextLayout(PyTypeObject *t, CYTHON_UNUS
   return o;
 }
 
-static void __pyx_tp_dealloc_9pdftotext_TextLayout(PyObject *o) {
+static void __pyx_tp_dealloc_11cypdftotext_TextLayout(PyObject *o) {
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && (!PyType_IS_GC(Py_TYPE(o)) || !_PyGC_FINALIZED(o))) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -3589,18 +3589,18 @@ static void __pyx_tp_dealloc_9pdftotext_TextLayout(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static PyMethodDef __pyx_methods_9pdftotext_TextLayout[] = {
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_9pdftotext_10TextLayout_1__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_9pdftotext_10TextLayout_3__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_11cypdftotext_TextLayout[] = {
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_11cypdftotext_10TextLayout_1__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_11cypdftotext_10TextLayout_3__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_9pdftotext_TextLayout = {
+static PyTypeObject __pyx_type_11cypdftotext_TextLayout = {
   PyVarObject_HEAD_INIT(0, 0)
-  "pdftotext.TextLayout", /*tp_name*/
-  sizeof(struct __pyx_obj_9pdftotext_TextLayout), /*tp_basicsize*/
+  "cypdftotext.TextLayout", /*tp_name*/
+  sizeof(struct __pyx_obj_11cypdftotext_TextLayout), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_9pdftotext_TextLayout, /*tp_dealloc*/
+  __pyx_tp_dealloc_11cypdftotext_TextLayout, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -3633,7 +3633,7 @@ static PyTypeObject __pyx_type_9pdftotext_TextLayout = {
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_9pdftotext_TextLayout, /*tp_methods*/
+  __pyx_methods_11cypdftotext_TextLayout, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -3643,7 +3643,7 @@ static PyTypeObject __pyx_type_9pdftotext_TextLayout = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_9pdftotext_TextLayout, /*tp_new*/
+  __pyx_tp_new_11cypdftotext_TextLayout, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -3664,8 +3664,8 @@ static PyTypeObject __pyx_type_9pdftotext_TextLayout = {
   #endif
 };
 
-static PyObject *__pyx_tp_new_9pdftotext_PageIter(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_9pdftotext_PageIter *p;
+static PyObject *__pyx_tp_new_11cypdftotext_PageIter(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_11cypdftotext_PageIter *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -3673,17 +3673,17 @@ static PyObject *__pyx_tp_new_9pdftotext_PageIter(PyTypeObject *t, PyObject *a, 
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_9pdftotext_PageIter *)o);
-  p->pdf = ((struct __pyx_obj_9pdftotext_PDF *)Py_None); Py_INCREF(Py_None);
-  if (unlikely(__pyx_pw_9pdftotext_8PageIter_1__cinit__(o, a, k) < 0)) goto bad;
+  p = ((struct __pyx_obj_11cypdftotext_PageIter *)o);
+  p->pdf = ((struct __pyx_obj_11cypdftotext_PDF *)Py_None); Py_INCREF(Py_None);
+  if (unlikely(__pyx_pw_11cypdftotext_8PageIter_1__cinit__(o, a, k) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_9pdftotext_PageIter(PyObject *o) {
-  struct __pyx_obj_9pdftotext_PageIter *p = (struct __pyx_obj_9pdftotext_PageIter *)o;
+static void __pyx_tp_dealloc_11cypdftotext_PageIter(PyObject *o) {
+  struct __pyx_obj_11cypdftotext_PageIter *p = (struct __pyx_obj_11cypdftotext_PageIter *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -3694,39 +3694,39 @@ static void __pyx_tp_dealloc_9pdftotext_PageIter(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_9pdftotext_PageIter(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11cypdftotext_PageIter(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_9pdftotext_PageIter *p = (struct __pyx_obj_9pdftotext_PageIter *)o;
+  struct __pyx_obj_11cypdftotext_PageIter *p = (struct __pyx_obj_11cypdftotext_PageIter *)o;
   if (p->pdf) {
     e = (*v)(((PyObject *)p->pdf), a); if (e) return e;
   }
   return 0;
 }
 
-static int __pyx_tp_clear_9pdftotext_PageIter(PyObject *o) {
+static int __pyx_tp_clear_11cypdftotext_PageIter(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_9pdftotext_PageIter *p = (struct __pyx_obj_9pdftotext_PageIter *)o;
+  struct __pyx_obj_11cypdftotext_PageIter *p = (struct __pyx_obj_11cypdftotext_PageIter *)o;
   tmp = ((PyObject*)p->pdf);
-  p->pdf = ((struct __pyx_obj_9pdftotext_PDF *)Py_None); Py_INCREF(Py_None);
+  p->pdf = ((struct __pyx_obj_11cypdftotext_PDF *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
 
-static PyObject *__pyx_specialmethod___pyx_pw_9pdftotext_8PageIter_3__next__(PyObject *self, CYTHON_UNUSED PyObject *arg) {return __pyx_pw_9pdftotext_8PageIter_3__next__(self);}
+static PyObject *__pyx_specialmethod___pyx_pw_11cypdftotext_8PageIter_3__next__(PyObject *self, CYTHON_UNUSED PyObject *arg) {return __pyx_pw_11cypdftotext_8PageIter_3__next__(self);}
 
-static PyMethodDef __pyx_methods_9pdftotext_PageIter[] = {
-  {"__next__", (PyCFunction)__pyx_specialmethod___pyx_pw_9pdftotext_8PageIter_3__next__, METH_NOARGS|METH_COEXIST, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_9pdftotext_8PageIter_5__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_9pdftotext_8PageIter_7__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_11cypdftotext_PageIter[] = {
+  {"__next__", (PyCFunction)__pyx_specialmethod___pyx_pw_11cypdftotext_8PageIter_3__next__, METH_NOARGS|METH_COEXIST, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_11cypdftotext_8PageIter_5__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_11cypdftotext_8PageIter_7__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_9pdftotext_PageIter = {
+static PyTypeObject __pyx_type_11cypdftotext_PageIter = {
   PyVarObject_HEAD_INIT(0, 0)
-  "pdftotext.PageIter", /*tp_name*/
-  sizeof(struct __pyx_obj_9pdftotext_PageIter), /*tp_basicsize*/
+  "cypdftotext.PageIter", /*tp_name*/
+  sizeof(struct __pyx_obj_11cypdftotext_PageIter), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_9pdftotext_PageIter, /*tp_dealloc*/
+  __pyx_tp_dealloc_11cypdftotext_PageIter, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -3753,13 +3753,13 @@ static PyTypeObject __pyx_type_9pdftotext_PageIter = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_9pdftotext_PageIter, /*tp_traverse*/
-  __pyx_tp_clear_9pdftotext_PageIter, /*tp_clear*/
+  __pyx_tp_traverse_11cypdftotext_PageIter, /*tp_traverse*/
+  __pyx_tp_clear_11cypdftotext_PageIter, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
-  __pyx_pw_9pdftotext_8PageIter_3__next__, /*tp_iternext*/
-  __pyx_methods_9pdftotext_PageIter, /*tp_methods*/
+  __pyx_pw_11cypdftotext_8PageIter_3__next__, /*tp_iternext*/
+  __pyx_methods_11cypdftotext_PageIter, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -3769,7 +3769,7 @@ static PyTypeObject __pyx_type_9pdftotext_PageIter = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_9pdftotext_PageIter, /*tp_new*/
+  __pyx_tp_new_11cypdftotext_PageIter, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -3790,8 +3790,8 @@ static PyTypeObject __pyx_type_9pdftotext_PageIter = {
   #endif
 };
 
-static PyObject *__pyx_tp_new_9pdftotext_PDF(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_9pdftotext_PDF *p;
+static PyObject *__pyx_tp_new_11cypdftotext_PDF(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_11cypdftotext_PDF *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -3799,18 +3799,18 @@ static PyObject *__pyx_tp_new_9pdftotext_PDF(PyTypeObject *t, PyObject *a, PyObj
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_9pdftotext_PDF *)o);
+  p = ((struct __pyx_obj_11cypdftotext_PDF *)o);
   p->data = ((PyObject*)Py_None); Py_INCREF(Py_None);
   p->encoding = ((PyObject*)Py_None); Py_INCREF(Py_None);
-  if (unlikely(__pyx_pw_9pdftotext_3PDF_1__cinit__(o, a, k) < 0)) goto bad;
+  if (unlikely(__pyx_pw_11cypdftotext_3PDF_1__cinit__(o, a, k) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_9pdftotext_PDF(PyObject *o) {
-  struct __pyx_obj_9pdftotext_PDF *p = (struct __pyx_obj_9pdftotext_PDF *)o;
+static void __pyx_tp_dealloc_11cypdftotext_PDF(PyObject *o) {
+  struct __pyx_obj_11cypdftotext_PDF *p = (struct __pyx_obj_11cypdftotext_PDF *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && (!PyType_IS_GC(Py_TYPE(o)) || !_PyGC_FINALIZED(o))) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -3820,7 +3820,7 @@ static void __pyx_tp_dealloc_9pdftotext_PDF(PyObject *o) {
   Py_CLEAR(p->encoding);
   (*Py_TYPE(o)->tp_free)(o);
 }
-static PyObject *__pyx_sq_item_9pdftotext_PDF(PyObject *o, Py_ssize_t i) {
+static PyObject *__pyx_sq_item_11cypdftotext_PDF(PyObject *o, Py_ssize_t i) {
   PyObject *r;
   PyObject *x = PyInt_FromSsize_t(i); if(!x) return 0;
   r = Py_TYPE(o)->tp_as_mapping->mp_subscript(o, x);
@@ -3828,31 +3828,31 @@ static PyObject *__pyx_sq_item_9pdftotext_PDF(PyObject *o, Py_ssize_t i) {
   return r;
 }
 
-static PyObject *__pyx_getprop_9pdftotext_3PDF_num_pages(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_9pdftotext_3PDF_9num_pages_1__get__(o);
+static PyObject *__pyx_getprop_11cypdftotext_3PDF_num_pages(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_11cypdftotext_3PDF_9num_pages_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_9pdftotext_3PDF_encoding(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_9pdftotext_3PDF_8encoding_1__get__(o);
+static PyObject *__pyx_getprop_11cypdftotext_3PDF_encoding(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_11cypdftotext_3PDF_8encoding_1__get__(o);
 }
 
-static PyMethodDef __pyx_methods_9pdftotext_PDF[] = {
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_9pdftotext_3PDF_9__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_9pdftotext_3PDF_11__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_11cypdftotext_PDF[] = {
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_11cypdftotext_3PDF_9__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_11cypdftotext_3PDF_11__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static struct PyGetSetDef __pyx_getsets_9pdftotext_PDF[] = {
-  {(char *)"num_pages", __pyx_getprop_9pdftotext_3PDF_num_pages, 0, (char *)0, 0},
-  {(char *)"encoding", __pyx_getprop_9pdftotext_3PDF_encoding, 0, (char *)0, 0},
+static struct PyGetSetDef __pyx_getsets_11cypdftotext_PDF[] = {
+  {(char *)"num_pages", __pyx_getprop_11cypdftotext_3PDF_num_pages, 0, (char *)0, 0},
+  {(char *)"encoding", __pyx_getprop_11cypdftotext_3PDF_encoding, 0, (char *)0, 0},
   {0, 0, 0, 0, 0}
 };
 
 static PySequenceMethods __pyx_tp_as_sequence_PDF = {
-  __pyx_pw_9pdftotext_3PDF_3__len__, /*sq_length*/
+  __pyx_pw_11cypdftotext_3PDF_3__len__, /*sq_length*/
   0, /*sq_concat*/
   0, /*sq_repeat*/
-  __pyx_sq_item_9pdftotext_PDF, /*sq_item*/
+  __pyx_sq_item_11cypdftotext_PDF, /*sq_item*/
   0, /*sq_slice*/
   0, /*sq_ass_item*/
   0, /*sq_ass_slice*/
@@ -3862,17 +3862,17 @@ static PySequenceMethods __pyx_tp_as_sequence_PDF = {
 };
 
 static PyMappingMethods __pyx_tp_as_mapping_PDF = {
-  __pyx_pw_9pdftotext_3PDF_3__len__, /*mp_length*/
-  __pyx_pw_9pdftotext_3PDF_7__getitem__, /*mp_subscript*/
+  __pyx_pw_11cypdftotext_3PDF_3__len__, /*mp_length*/
+  __pyx_pw_11cypdftotext_3PDF_7__getitem__, /*mp_subscript*/
   0, /*mp_ass_subscript*/
 };
 
-static PyTypeObject __pyx_type_9pdftotext_PDF = {
+static PyTypeObject __pyx_type_11cypdftotext_PDF = {
   PyVarObject_HEAD_INIT(0, 0)
-  "pdftotext.PDF", /*tp_name*/
-  sizeof(struct __pyx_obj_9pdftotext_PDF), /*tp_basicsize*/
+  "cypdftotext.PDF", /*tp_name*/
+  sizeof(struct __pyx_obj_11cypdftotext_PDF), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_9pdftotext_PDF, /*tp_dealloc*/
+  __pyx_tp_dealloc_11cypdftotext_PDF, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -3903,11 +3903,11 @@ static PyTypeObject __pyx_type_9pdftotext_PDF = {
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
-  __pyx_pw_9pdftotext_3PDF_5__iter__, /*tp_iter*/
+  __pyx_pw_11cypdftotext_3PDF_5__iter__, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_9pdftotext_PDF, /*tp_methods*/
+  __pyx_methods_11cypdftotext_PDF, /*tp_methods*/
   0, /*tp_members*/
-  __pyx_getsets_9pdftotext_PDF, /*tp_getset*/
+  __pyx_getsets_11cypdftotext_PDF, /*tp_getset*/
   0, /*tp_base*/
   0, /*tp_dict*/
   0, /*tp_descr_get*/
@@ -3915,7 +3915,7 @@ static PyTypeObject __pyx_type_9pdftotext_PDF = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_9pdftotext_PDF, /*tp_new*/
+  __pyx_tp_new_11cypdftotext_PDF, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -3943,17 +3943,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_pdftotext(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_cypdftotext(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_pdftotext},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_cypdftotext},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "pdftotext",
+    "cypdftotext",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -3996,6 +3996,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_Unable_to_read_PDF, __pyx_k_Unable_to_read_PDF, sizeof(__pyx_k_Unable_to_read_PDF), 0, 1, 0, 0},
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
+  {&__pyx_n_s_cypdftotext, __pyx_k_cypdftotext, sizeof(__pyx_k_cypdftotext), 0, 0, 1, 1},
   {&__pyx_n_s_data, __pyx_k_data, sizeof(__pyx_k_data), 0, 0, 1, 1},
   {&__pyx_n_s_decode, __pyx_k_decode, sizeof(__pyx_k_decode), 0, 0, 1, 1},
   {&__pyx_n_s_dict, __pyx_k_dict, sizeof(__pyx_k_dict), 0, 0, 1, 1},
@@ -4011,7 +4012,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_out_of_range_for_pdf_with, __pyx_k_out_of_range_for_pdf_with, sizeof(__pyx_k_out_of_range_for_pdf_with), 0, 1, 0, 0},
   {&__pyx_kp_u_pages, __pyx_k_pages, sizeof(__pyx_k_pages), 0, 1, 0, 0},
   {&__pyx_n_s_pdf, __pyx_k_pdf, sizeof(__pyx_k_pdf), 0, 0, 1, 1},
-  {&__pyx_n_s_pdftotext, __pyx_k_pdftotext, sizeof(__pyx_k_pdftotext), 0, 0, 1, 1},
   {&__pyx_n_s_physical, __pyx_k_physical, sizeof(__pyx_k_physical), 0, 0, 1, 1},
   {&__pyx_n_s_pickle, __pyx_k_pickle, sizeof(__pyx_k_pickle), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_PickleError, __pyx_k_pyx_PickleError, sizeof(__pyx_k_pyx_PickleError), 0, 0, 1, 1},
@@ -4065,7 +4065,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "pdftotext.pyx":88
+  /* "cypdftotext.pyx":88
  *         self.doc = document.load_from_raw_data(self.data, len(data))
  *         if self.doc == NULL:
  *             raise ValueError("Unable to read PDF")             # <<<<<<<<<<<<<<
@@ -4160,36 +4160,36 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_9pdftotext_TextLayout) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_11cypdftotext_TextLayout) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_9pdftotext_TextLayout.tp_print = 0;
+  __pyx_type_11cypdftotext_TextLayout.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9pdftotext_TextLayout.tp_dictoffset && __pyx_type_9pdftotext_TextLayout.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_9pdftotext_TextLayout.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11cypdftotext_TextLayout.tp_dictoffset && __pyx_type_11cypdftotext_TextLayout.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11cypdftotext_TextLayout.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_TextLayout, (PyObject *)&__pyx_type_9pdftotext_TextLayout) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9pdftotext_TextLayout) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
-  __pyx_ptype_9pdftotext_TextLayout = &__pyx_type_9pdftotext_TextLayout;
-  if (PyType_Ready(&__pyx_type_9pdftotext_PageIter) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_TextLayout, (PyObject *)&__pyx_type_11cypdftotext_TextLayout) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_11cypdftotext_TextLayout) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_ptype_11cypdftotext_TextLayout = &__pyx_type_11cypdftotext_TextLayout;
+  if (PyType_Ready(&__pyx_type_11cypdftotext_PageIter) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_9pdftotext_PageIter.tp_print = 0;
+  __pyx_type_11cypdftotext_PageIter.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9pdftotext_PageIter.tp_dictoffset && __pyx_type_9pdftotext_PageIter.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_9pdftotext_PageIter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11cypdftotext_PageIter.tp_dictoffset && __pyx_type_11cypdftotext_PageIter.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11cypdftotext_PageIter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PageIter, (PyObject *)&__pyx_type_9pdftotext_PageIter) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9pdftotext_PageIter) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  __pyx_ptype_9pdftotext_PageIter = &__pyx_type_9pdftotext_PageIter;
-  if (PyType_Ready(&__pyx_type_9pdftotext_PDF) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PageIter, (PyObject *)&__pyx_type_11cypdftotext_PageIter) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_11cypdftotext_PageIter) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_ptype_11cypdftotext_PageIter = &__pyx_type_11cypdftotext_PageIter;
+  if (PyType_Ready(&__pyx_type_11cypdftotext_PDF) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_9pdftotext_PDF.tp_print = 0;
+  __pyx_type_11cypdftotext_PDF.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9pdftotext_PDF.tp_dictoffset && __pyx_type_9pdftotext_PDF.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_9pdftotext_PDF.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11cypdftotext_PDF.tp_dictoffset && __pyx_type_11cypdftotext_PDF.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11cypdftotext_PDF.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PDF, (PyObject *)&__pyx_type_9pdftotext_PDF) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9pdftotext_PDF) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
-  __pyx_ptype_9pdftotext_PDF = &__pyx_type_9pdftotext_PDF;
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PDF, (PyObject *)&__pyx_type_11cypdftotext_PDF) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_11cypdftotext_PDF) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
+  __pyx_ptype_11cypdftotext_PDF = &__pyx_type_11cypdftotext_PDF;
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -4240,11 +4240,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initpdftotext(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initpdftotext(void)
+__Pyx_PyMODINIT_FUNC initcypdftotext(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initcypdftotext(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_pdftotext(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_pdftotext(void)
+__Pyx_PyMODINIT_FUNC PyInit_cypdftotext(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_cypdftotext(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -4311,7 +4311,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_pdftotext(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_cypdftotext(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -4323,7 +4323,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_pdftotext(PyObject *__pyx_pyinit_m
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'pdftotext' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'cypdftotext' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -4338,7 +4338,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_pdftotext(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_cypdftotext(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -4377,7 +4377,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("pdftotext", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("cypdftotext", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -4395,14 +4395,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_pdftotext) {
+  if (__pyx_module_is_main_cypdftotext) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "pdftotext")) {
-      if (unlikely(PyDict_SetItemString(modules, "pdftotext", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "cypdftotext")) {
+      if (unlikely(PyDict_SetItemString(modules, "cypdftotext", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -4423,7 +4423,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pdftotext.pyx":48
+  /* "cypdftotext.pyx":48
  * 
  * 
  * POPPLER_VERSION = version_string()             # <<<<<<<<<<<<<<
@@ -4435,7 +4435,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_POPPLER_VERSION, __pyx_t_1) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pdftotext.pyx":52
+  /* "cypdftotext.pyx":52
  * 
  * cdef class TextLayout:
  *     physical = text_layout_enum.physical_layout             # <<<<<<<<<<<<<<
@@ -4444,11 +4444,11 @@ if (!__Pyx_RefNanny) {
  */
   __pyx_t_1 = __Pyx_PyInt_From_enum__poppler_3a__3a_page_3a__3a_text_layout_enum(poppler::page::physical_layout); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_9pdftotext_TextLayout->tp_dict, __pyx_n_s_physical, __pyx_t_1) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_11cypdftotext_TextLayout->tp_dict, __pyx_n_s_physical, __pyx_t_1) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  PyType_Modified(__pyx_ptype_9pdftotext_TextLayout);
+  PyType_Modified(__pyx_ptype_11cypdftotext_TextLayout);
 
-  /* "pdftotext.pyx":53
+  /* "cypdftotext.pyx":53
  * cdef class TextLayout:
  *     physical = text_layout_enum.physical_layout
  *     raw = text_layout_enum.raw_order_layout             # <<<<<<<<<<<<<<
@@ -4457,11 +4457,11 @@ if (!__Pyx_RefNanny) {
  */
   __pyx_t_1 = __Pyx_PyInt_From_enum__poppler_3a__3a_page_3a__3a_text_layout_enum(poppler::page::raw_order_layout); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_9pdftotext_TextLayout->tp_dict, __pyx_n_s_raw, __pyx_t_1) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_11cypdftotext_TextLayout->tp_dict, __pyx_n_s_raw, __pyx_t_1) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  PyType_Modified(__pyx_ptype_9pdftotext_TextLayout);
+  PyType_Modified(__pyx_ptype_11cypdftotext_TextLayout);
 
-  /* "pdftotext.pyx":54
+  /* "cypdftotext.pyx":54
  *     physical = text_layout_enum.physical_layout
  *     raw = text_layout_enum.raw_order_layout
  *     non_raw_non_physical = text_layout_enum.non_raw_non_physical_layout             # <<<<<<<<<<<<<<
@@ -4470,18 +4470,18 @@ if (!__Pyx_RefNanny) {
  */
   __pyx_t_1 = __Pyx_PyInt_From_enum__poppler_3a__3a_page_3a__3a_text_layout_enum(poppler::page::non_raw_non_physical_layout); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_9pdftotext_TextLayout->tp_dict, __pyx_n_s_non_raw_non_physical, __pyx_t_1) < 0) __PYX_ERR(0, 54, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_11cypdftotext_TextLayout->tp_dict, __pyx_n_s_non_raw_non_physical, __pyx_t_1) < 0) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  PyType_Modified(__pyx_ptype_9pdftotext_TextLayout);
+  PyType_Modified(__pyx_ptype_11cypdftotext_TextLayout);
 
-  /* "pdftotext.pyx":81
+  /* "cypdftotext.pyx":81
  *     cdef readonly str encoding
  * 
  *     def __cinit__(self, bytes data, layout=TextLayout.physical, encoding='utf8'):             # <<<<<<<<<<<<<<
  *         self.data = data
  *         self.layout = layout
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_9pdftotext_TextLayout), __pyx_n_s_physical); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_11cypdftotext_TextLayout), __pyx_n_s_physical); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_k__3 = __pyx_t_1;
   __Pyx_GIVEREF(__pyx_t_1);
@@ -4492,12 +4492,12 @@ if (!__Pyx_RefNanny) {
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9pdftotext_1__pyx_unpickle_TextLayout, NULL, __pyx_n_s_pdftotext); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_11cypdftotext_1__pyx_unpickle_TextLayout, NULL, __pyx_n_s_cypdftotext); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle_TextLayout, __pyx_t_1) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pdftotext.pyx":1
+  /* "cypdftotext.pyx":1
  * # distutils: language = c++             # <<<<<<<<<<<<<<
  * 
  * from libcpp.string cimport string
@@ -4522,11 +4522,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init pdftotext", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init cypdftotext", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init pdftotext");
+    PyErr_SetString(PyExc_ImportError, "init cypdftotext");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

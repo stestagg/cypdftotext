@@ -1,5 +1,9 @@
 # Changes
 
+## 3.0.0 - 2020-08-17
+
+ - Cython fork of pdftotext (This fork now cypypdftotext)
+
 ## 2.1.5 - 2020-08-14
 
  - Pass `-mmacosx-version-min=10.9` to the linker on macOS
