@@ -65,7 +65,7 @@ class IterTest(unittest.TestCase):
 
     def test_iter(self):
         pdf = pdftotext.PDF(get_file('two_page.pdf'))
-        self.assertEqual(list(pdf), ['one.\n', 'two.\n'])
+        self.assertEqual([x.strip() for x in list(pdf)], ['one.', 'two.'])
 
 class GetItemTest(unittest.TestCase):
     """Test the __getitem__ method."""
