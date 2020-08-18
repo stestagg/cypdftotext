@@ -3,6 +3,11 @@
 from libcpp.string cimport string
 from libcpp.vector cimport vector
 
+
+cdef extern from 'poppler/cpp/poppler-version.h':
+    cdef const int POPPLER_VERSION_MAJOR
+    cdef const int POPPLER_VERSION_MINOR
+
 cdef extern from 'poppler/cpp/poppler-version.h' namespace 'poppler':
     string version_string()
 
@@ -44,14 +49,19 @@ cdef extern from 'poppler/cpp/poppler-page.h' namespace 'poppler::page':
         raw_order_layout
         non_raw_non_physical_layout
 
-
 POPPLER_VERSION = version_string()
 
 
-cdef class TextLayout:    
+class TextLayout:
     physical = text_layout_enum.physical_layout
     raw = text_layout_enum.raw_order_layout
-    non_raw_non_physical = text_layout_enum.non_raw_non_physical_layout
+    non_raw_non_physical = NotImplemented
+
+
+if POPPLER_VERSION_MAJOR > 0 or POPPLER_VERSION_MINOR >= 88:
+    # This is a new enum value that will not be generally 
+    # available until some point far in the future (written 2020)
+    TextLayout.non_raw_non_physical = 2
 
 
 cdef class PageIter:
@@ -107,4 +117,5 @@ cdef class PDF:
         cdef bytes page_bytes = page_text.to_latin1()
         if page_bytes[-1] == 0x0c:
             page_bytes = page_bytes[:-1]
+        del page
         return page_bytes.decode(self.encoding)

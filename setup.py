@@ -11,33 +11,20 @@ except ImportError:
     HAVE_CYTHON = False
 
 
-include_dirs = None
+include_dirs = ['lib/poppler/']
 library_dirs = None
 
 
-# On some BSDs, poppler is in /usr/local, which is not searched by default
-if platform.system() in ["Darwin", "FreeBSD", "OpenBSD"]:
-    include_dirs = ["/usr/local/include"]
-    library_dirs = ["/usr/local/lib"]
-
-
-# On Windows, only building with conda is tested so far
-if platform.system() == "Windows":
-    conda_prefix = os.getenv("CONDA_PREFIX")
-    if conda_prefix is not None:
-        include_dirs = [os.path.join(conda_prefix, r"Library\include")]
-        library_dirs = [os.path.join(conda_prefix, r"Library\lib")]
-
-
-extra_compile_args = ["-Wall"]
-extra_link_args = []
+extra_compile_args = ["-Wall", '-fPIC', '-g']
+extra_link_args = ['-g']
 
 if platform.system() == "Darwin":
     extra_compile_args += ["-mmacosx-version-min=10.9", "-std=c++11"]
     extra_link_args += ["-mmacosx-version-min=10.9"]
 
+
 if HAVE_CYTHON:
-    cythonize('cypdftotext.pyx', language_level=3)
+    cythonize('cypdftotext.pyx', language_level=3,)
 
 
 module = Extension(
