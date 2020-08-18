@@ -115,7 +115,7 @@ cdef class PDF:
             raise ValueError(f"Error reading page {page_num}")
         cdef ustring page_text = page.text(rectf(), self.layout)
         cdef bytes page_bytes = page_text.to_latin1()
-        if page_bytes and page_bytes[-1] == 0x0c:
+        if len(page_bytes) and page_bytes[-1] == 0x0c:
             page_bytes = page_bytes[:-1]
         del page
         return page_bytes.decode(self.encoding)
