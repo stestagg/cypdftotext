@@ -1,10 +1,9 @@
 # cypdftotext
 
-[![PyPI Status](https://img.shields.io/pypi/v/pdftotext.svg)](https://pypi.python.org/pypi/pdftotext)
-[![Travis Status](https://api.travis-ci.com/jalan/pdftotext.svg?branch=master)](https://travis-ci.com/jalan/pdftotext)
-[![AppVeyor status](https://ci.appveyor.com/api/projects/status/uwcjxgu31kirkiuj/branch/master?svg=true)](https://ci.appveyor.com/project/jalan/pdftotext/branch/master)
+[![PyPI Status](https://img.shields.io/pypi/v/cypdftotext.svg)](https://pypi.python.org/pypi/cypdftotext)
+[![Travis Status](https://api.travis-ci.com/stestagg/cypdftotext.svg?branch=master)](https://travis-ci.com/stestagg/cypdftotext)
 [![Coverage Status](https://coveralls.io/repos/github/jalan/pdftotext/badge.svg?branch=master)](https://coveralls.io/github/jalan/pdftotext?branch=master)
-[![Downloads](https://img.shields.io/pypi/dm/pdftotext.svg)](https://pypistats.org/packages/pdftotext)
+[![Downloads](https://img.shields.io/pypi/dm/cypdftotext.svg)](https://pypistats.org/packages/cypdftotext)
 
 Cython port of pdftotext - A Simple PDF text extraction library
 
